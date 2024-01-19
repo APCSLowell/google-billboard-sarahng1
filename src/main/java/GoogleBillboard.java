@@ -1,22 +1,20 @@
+public class GoogleBillboard{
+       public final static String e = "2.7182818284590452353602874713526624977572470936999595749669676277240766303535475945713821785251664274274663919320030599218174135966290435";  
 
-public class GoogleBillboard {
-	public final static String e = "2.7182818284590452353602874713526624977572470936999595749669676277240766303535475945713821785251664274274663919320030599218174135966290435";  
-	public static void main(final String[] args) {
-		for(int i = 2; i < e.length()-10; i++){
+public static void main(final String[] args) {
+for(int i = 2; i < e.length()-10; i++){
        String num = e.substring(i, i+10);
        double dNum = Double.parseDouble(num);
   if(isPrime(dNum) == true){
     System.out.println(dNum);
     break;
   }
-}		
-		System.out.println("Not the right string, tests will fail!");
-	}
-	
-
-	//Finish this function
-	public static boolean isPrime(double dNum){
-		if(dNum < 2){
+}
+}
+//no draw
+  //Finish this function
+public static boolean isPrime(double dNum){
+  if(dNum < 2){
        return false;
   }
 for(int i = 2; i <= Math.sqrt(dNum); i++){
@@ -24,7 +22,6 @@ for(int i = 2; i <= Math.sqrt(dNum); i++){
     return false;
   }
 }
-return true;	
-
+return true;
 }
-
+}
